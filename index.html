@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="ui">
+            <div class="score-display">
+                Score: <span id="currentScore">0</span> | 
+                High Score: <span id="highScore">0</span>
+            </div>
+        </div>
+        
+        <canvas id="gameCanvas"></canvas>
+        
+        <div id="touchControls">
+            <div class="touch-row">
+                <button class="touch-btn" id="upBtn">↑</button>
+            </div>
+            <div class="touch-row">
+                <button class="touch-btn" id="leftBtn">←</button>
+                <button class="touch-btn" id="rightBtn">→</button>
+            </div>
+            <div class="touch-row">
+                <button class="touch-btn" id="downBtn">↓</button>
+            </div>
+        </div>
+        
+        <div id="menu">
+            <h1>🐍 Snake Game</h1>
+            <p>Collect food to grow your snake!</p>
+            <div class="controls-info">
+                <p>PC: Arrow Keys to move</p>
+                <p>Mobile: Use touch buttons below</p>
+            </div>
+            <button id="startBtn">Start Game</button>
+        </div>
+        
+        <div id="gameOver">
+            <h2>Game Over!</h2>
+            <p>Your score: <span id="finalScore">0</span></p>
+            <p>High score: <span id="finalHighScore">0</span></p>
+            <button id="restartBtn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
